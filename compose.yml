@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   devopsdb:
-    image: Chikku25/flm-oct:db
+    image: chikku25/flm-oct:db
     ports:
       - "3306:3306"
     deploy:
@@ -11,7 +11,7 @@ services:
       - mynetwork
 
   application:
-    image: Chikku25/flm-oct:javaapp
+    image: chikku25/flm-oct:javaapp
     ports:
       - "1111:8080"
     deploy:
